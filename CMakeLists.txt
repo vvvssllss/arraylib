@@ -60,3 +60,9 @@ if (BUILD_TESTING)
 
     add_test(NAME integration COMMAND test_integration)
 endif()
+
+add_executable(variant_23
+    examples/variant_23.cpp
+)
+
+target_link_libraries(variant_23 PRIVATE arraylib)
